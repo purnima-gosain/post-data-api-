@@ -10,6 +10,11 @@ class PostPage extends StatefulWidget {
 class _PostPageState extends State<PostPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Center(child: Text("Add product")),
+      ),
+      body: SingleChildScrollView(),
+    );
   }
 }
