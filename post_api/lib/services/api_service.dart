@@ -15,6 +15,8 @@ Future<ProductModel?> postProduct(String title, String price,
     'category': category
   });
   if (response.statusCode == 200) {
+    print("Successfully added");
+    print(response.data);
     return ProductModel.fromJson(response.data);
   } else {
     throw Exception("Unable to post data");
